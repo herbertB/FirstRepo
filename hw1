@@ -8,3 +8,20 @@ function Point(x,y){
 	}
 }
 
+n Triangle(p1,p2,p3){
+	this.p1 = p1;
+		this.p2 = p2;
+			this.p3 = p3;
+				var d12 = p1.getDistance(p2);
+					var d13 = p1.getDistance(p3);
+						var d23 = p2.getDistance(p3);
+								
+									this.getPerimeter = function(){
+											var perimeter = d12+d23+d13;
+													return perimeter;
+														}
+															this.getArea = function() {
+																	var semiperimeter = this.getPerimeter()/2;
+																			return Math.sqrt(semiperimeter*(semiperimeter - d12)*(semiperimeter - d23)*(semiperimeter - d13));
+																				}
+																				}
