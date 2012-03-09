@@ -1,0 +1,10 @@
+function Point(x,y){
+	this.x = x;
+	this.y = y;
+	this.getDistance = function(point){
+		var XDistance = this.x - point.x;
+		var YDistance = this.y - point.y;
+		return Math.sqrt(Math.pow(XDistance,2)+Math.pow(YDistance,2));
+	}
+}
+
